@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+function validateform()
+{
+	var name = document.myform.naem.value;
+	var password = document.myform.password.value;
+	if(name==null||name=="")
+	{
+		alert("Name can't be blank");
+		return false;
+	}
+	else if(password length<6)
+	{
+		alert ("password must be atleast of 6 characters long");
+		return false;
+
+	}
+}
+	</script>
+
+<body>
+<form name="myform"method = "post"
+action="http://www.javatpoint.com/javascriptpages/valid.jsp"onsubmit="return validateform()">
+Name:<input type="text"name="name"><br/>
+Password:<input type="password"name="password"><br/>
+<input type ="submit"value ="register">
+</form>
+
+</body>
+
+</html>
